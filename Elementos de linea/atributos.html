@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parrafo-1{
+            color: rgb(40, 219, 93)
+        }
+    </style>
+</head>
+<body>
+    <p class="parrafo-1">Clases</p>
+    <p id="espana">Identificador</p>
+    <p>Titulo con Tooltip</p>
+    <p id="parrafo-2" data-ejemplo="DATA">Datos pasados por la etiqueta</p>
+    
+    <script>
+        const p = document.getElementById("espana")
+        const parrafo2=Document.getElementById("parrafo-2")
+        console.log(parrafo2.dataset.ejemplo)
+        console.log(p.textContent)
+    </script>
+</body>
+</html>
